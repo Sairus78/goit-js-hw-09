@@ -39,3 +39,67 @@
 .gallery-item:focus {
   transform: scale(1.05);
 }
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 32px; */
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.feedback-form input[type='email'],
+.feedback-form textarea {
+  width: 100%;
+  margin-top: 8px; /* Відступ між лейблом і полем */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.feedback-form input[type='email'] {
+  height: 40px;
+  margin-bottom: 8px;
+}
+.feedback-form textarea {
+  max-height: 80px;
+  resize: none;
+}
+
+.feedback-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 16px;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
